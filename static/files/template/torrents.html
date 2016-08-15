@@ -1,7 +1,7 @@
 
 <div class="torrents-header">
   <h3 class="ui header">
-    Torrents
+  List of Downloading Torrents
   </h3>
   <h5 class="ui files downloading header">
     {{ numKeys(state.Torrents) }} torrent{{ numKeys(state.Torrents) == 1 && '' || 's' }}
@@ -9,7 +9,7 @@
 </div>
 
 <div ng-if="isEmpty(state.Torrents)" class="ui message nodownloads">
-  <p>Add torrents above</p>
+  <p>Please Add torrents above</p>
 </div>
 
 <div ng-repeat="(hash, t) in state.Torrents"
