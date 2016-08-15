@@ -54,7 +54,10 @@
 		<section class="omni" ng-controller="OmniController" ng-include src="'template/omni.html'"></section>
 		<section class="torrents" ng-controller="TorrentsController" ng-include src="'template/torrents.html'"></section>
 		<section class="downloads" ng-controller="DownloadsController" ng-include src="'template/downloads.html'"></section>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+	
+		<footer>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- TF torrent -->
 <ins class="adsbygoogle"
      style="display:block"
@@ -64,11 +67,11 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-	
-		<footer>
+			
 				<span>CREDITS:<a href="http://trickforums.net/showteam.php" target="_blank">Trickforums_TEAM</a>/<a href="http://trickforums.net/Forum-Support-Feedback" target="_blank">SUPPORT</a> version {{ state.Stats.Version }}	-	</span>
 			<span ng-if="numKeys(state.Users) > 1">{{ numKeys(state.Users) }} users connected	-	</span>
 			<span><a href="http://trickforums.net/contact.php" target="_blank">ContacT Us</a> {{ state.Stats.Runtime }}</span>
+		
 		</footer>
 
 		<script src="js/vendor/query-string.js"></script>
